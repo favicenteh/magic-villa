@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MagicVilla_API.Controllers.Modelos
+namespace MagicVilla_API.Modelos
 {
     public class Villa
     {
@@ -14,7 +14,7 @@ namespace MagicVilla_API.Controllers.Modelos
         public string Detalle { get; set; }
 
         [Required]
-        public double Tarifa { get; set; } 
+        public double Tarifa { get; set; }
 
         public int Ocupantes { get; set; }
 

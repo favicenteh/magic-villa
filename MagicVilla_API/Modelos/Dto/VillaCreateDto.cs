@@ -1,12 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace MagicVilla_API.Controllers.Modelos.Dto
+namespace MagicVilla_API.Modelos.Dto
 {
-    public class VillaDto
+    public class VillaCreateDto
     {
-
-        public int Id { get; set; }
-
         [Required]
         [MaxLength(30)]
         public string Nombre { get; set; }
@@ -22,6 +19,6 @@ namespace MagicVilla_API.Controllers.Modelos.Dto
 
         public string ImagenUrl { get; set; }
 
-        public string Amenidad { get; set; } 
+        public string Amenidad { get; set; }
     }
 }
